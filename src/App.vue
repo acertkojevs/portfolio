@@ -5,7 +5,11 @@ import AppHeader from './components/AppHeader.vue';
 </script>
 
 <template>
-  <AppHeader />
-  <RouterView />
-  <AppFooter />
+  <main class="min-h-screen flex flex-col">
+    <AppHeader />
+    <main class="grow">
+      <router-view />
+    </main>
+    <AppFooter />
+  </main>
 </template>
