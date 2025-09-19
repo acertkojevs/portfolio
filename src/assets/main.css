@@ -1,3 +1,29 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+/* @import './base.css'; */
 @import 'tailwindcss';
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes:
+    light --default,
+    dark;
+}
+
+@theme {
+  --font-roboto: 'Roboto', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+  --font-Sofia: 'Sofia Sans', sans-serif;
+}
+
+body,
+p,
+a {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Sofia Sans', serif; /* different font for headings */
+}
